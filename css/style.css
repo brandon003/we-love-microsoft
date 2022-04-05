@@ -1,5 +1,7 @@
 body{
-    background: rgba(250,250,250,.1);
+    background: rgb(24, 23, 23);
     width: 500px;
     height: 500px;
+    color: rgb(139, 79, 6);
+    text-shadow: 10px 20px 10px bisque,-10px -20px 10px bisque,1px 2px 1px bisque;
 }

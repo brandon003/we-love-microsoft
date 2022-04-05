@@ -45,7 +45,7 @@ function cascadeArray(x, i, v, n) {
 }
 
 
-eachCons(arr,0);
+// eachCons(arr,0);
 // console.log(eachCons(arr,3));
 
 function check(arr, x) {
@@ -53,6 +53,11 @@ function check(arr, x) {
     let containsValue = false;
     arr.forEach(element => { if (x == element) { containsValue = true } });
     return containsValue
+    //alternative
+    return arr.includes(x)
 }
 
 // console.log(check(arr,1))
+
+
+

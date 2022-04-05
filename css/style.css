@@ -1,5 +1,8 @@
 body{
-    background: rgba(250,250,250,.1);
+    background: rgb(49, 49, 49);
     width: 500px;
     height: 500px;
+    color: rgb(155, 90, 11);
+    /* Multiple text shadows separated by commas x offset (+ve>right -ve>left), y offset (+ve>bottom -ve>top), blur radius (larger>more blur) */
+    text-shadow: 10px 20px 10px bisque, -10px -20px 10px bisque, 1px 2px 1px bisque;
 }

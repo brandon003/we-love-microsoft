@@ -18,28 +18,40 @@ let arr = [1,2,3,4,5,6,7,8,9];
 
 
 function eachCons(array, n) {
-    let cascadeList = array.map(function (x, i, v,) { cascadeArray(x, i, v, n) });
+    let cascadeList = [];
+    cascadeList = array.map(function (x, i, v,) { cascadeArray(x, i, v, n) });
+    for(let w = 0;w<cascadeList.length; w++){
+    console.log(cascadeList[w]);
+    }
     return cascadeList;
 }
 
 function cascadeArray(x, i, v, n) {
     let array=[];
-    // console.log(x,i,v,n);
-    if (n > 0) {
-        for(let j = 0; j < n; j++) {
-            array[j]=v[i];
-            console.log(j,i,x)
-            console.log(array[j]);
+    console.log(x,i,v,n);
+    if((n > 0) && ((i+n)<=v.length)){
+        for (let j = 0; j+i < i+n; j++) {
+            array.push(v[i+j]);
+            // console.log(n, j, i, j+i,i+n, x, v[i + j])
+            console.log(array);
         }
-        return array;
-    } else return x;
+        console.log[array];    
+        
+    } else array = x;
+
+    console.log[array];
+    return array;
 }
 
 
-console.log(eachCons(arr,3));
+eachCons(arr,1);
+// console.log(eachCons(arr,3));
 
-function check(a, x) {
+function check(arr, x) {
     // your code here
     let containsValue = false;
-    return containsValue = a.foreach(element => { if (x == element) { return true });
+    arr.forEach(element => { if (x == element) { containsValue = true } });
+    return containsValue
 }
+
+// console.log(check(arr,1))

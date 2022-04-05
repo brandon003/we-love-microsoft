@@ -54,10 +54,12 @@ function check(arr, x) {
     arr.forEach(element => { if (x == element) { containsValue = true } });
     return containsValue
     //alternative
-    return arr.includes(x)
 }
 
+const check1 = (arr, x) => arr.includes(x)
+
 // console.log(check(arr,1))
+console.log(check1(arr,1))
 
 
 
